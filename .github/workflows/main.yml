@@ -22,5 +22,7 @@ jobs:
 
       - name: 'Getting WARP+ Traffic'
         env:
-          DEVICEID: ${{ secrets.DEVICEID }}      
-        run: python warp.py
+          DEVICEID: ${{ secrets.DEVICEID }}  
+
+        run: pip install requests
+             python warp.py
